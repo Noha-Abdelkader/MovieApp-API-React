@@ -1,0 +1,87 @@
+
+.vote_average ,  .vote_count ,  .popularity , .release_date {
+    padding: 0.5rem;
+    border-radius: 10px;
+  margin-inline: 0.7rem ;
+  }
+
+
+.original_language>p{
+    background:linear-gradient(to bottom,  var(--primary-color) , var(--bg-primary-dark));
+    font-weight: 900;
+    border-radius: 10px;
+
+}
+
+ .icon i{
+  color: bisque;
+}
+  .original_language>p{
+padding: 0;
+margin: 0;
+  }
+.layer{
+    background-color: var(--bgColorFaint);
+    transition: all 1s;
+    font-size: 0.8rem;
+}
+.contain:hover .layer{
+    top: 0 !important;
+    bottom: 0;
+}
+
+.blank{
+  min-width: 297px;
+  min-height: 300px;
+  background-color: rgba(113, 116, 127, 0.324);
+}
+@media screen and (max-width:2000px) {
+.blank{
+  min-height: 610px;
+}
+}
+
+@media screen and (max-width:1400px) {
+.blank{
+  min-height: 520px;
+}
+}
+
+@media screen and (max-width:1200px) {
+.blank{
+  min-height: 432px;
+}
+}
+
+@media screen and (max-width:992px) {
+.blank{
+  min-height: 310px;
+}
+}
+
+
+@media screen and (max-width:768px) {
+.blank{
+  min-height: 675px;
+}
+.layer{
+font-size: 1.2rem;
+}
+}
+
+.paginate>button{
+  background-color: transparent;
+border: none;
+color: whitesmoke;
+transition: all 0.5s;
+
+}
+.paginate>button:hover{
+  background-color: transparent;
+  color: red;
+}
+.paginate>button:focus{
+  color: red;
+  background-color: transparent;
+  box-shadow: none;
+}

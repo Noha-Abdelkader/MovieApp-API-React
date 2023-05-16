@@ -1,0 +1,19 @@
+
+.inputs>*{
+border-radius: 30px;
+padding: 1rem;
+width: 100%;
+margin-bottom: 1rem;
+}
+
+.contact_container{
+    background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+width: 100%;
+
+}
+.contact_inputs{
+background-color: #26526f85;
+}

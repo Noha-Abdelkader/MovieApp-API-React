@@ -1,0 +1,111 @@
+
+.singleMovie{
+    overflow: hidden;
+    position: relative;
+    color: var(--bgColor);
+    font-weight: 900;
+    }
+    
+    .original_title{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: var(--mainColor);
+    }
+    .vote_average ,  .vote_count ,  .popularity ,  .original_language{
+      padding: 0.25rem;
+      border-radius: 3px;
+      position: absolute;
+    transition: all 0.5s;
+    
+    }
+    .vote_average{
+      right: -50%;
+      top:10%;
+      }
+      .vote_count{
+      left: -70%;
+      top:60%
+      }
+    
+      .popularity{
+        top:70%;
+        right: -70%;
+      }
+      .original_language{
+    top: 0;
+    right: 0;
+      }
+    
+     .singleMovie:hover  .vote_average{
+      right: 0%;
+      }
+     .singleMovie:hover    .vote_count{
+      left: 0%;
+    }
+    .singleMovie:hover  .popularity{
+      right: 25%;
+    }
+    
+    .singleMovie  img{
+      transition: all 1s;
+    }
+    .singleMovie:hover  img{
+    filter: blur(1px) grayscale(100%);
+    transform: scale(1.1);
+    }
+    .homeHead{
+      border-bottom:  1px dotted gray;
+      border-top:  1px dotted gray;
+      padding: 2rem;
+      position: relative;
+      border-radius:100% 54% 89% 63% / 51% 8% 90% 38%  ;
+      background-color: var(--bgColorFaint);
+      transition: all 1s;
+    }
+    .homeHead>i{
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 2rem;
+      padding: 0.5rem;
+    
+    }
+    
+    .play{
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50% , -50%);
+      transition: all 1s;
+      opacity: 0;
+    }
+    .singleMovie:hover  .play{
+    transform: translate(-50% , -50%) scale(1.4);
+    opacity: 1;
+    }
+    .homeHead:hover{
+      transform: perspective(600px) rotateX(-5deg) rotateY(10deg);
+    }
+    .inputSearch{
+      width: 65%;
+    }
+  
+    .paginate>button{
+      background-color: transparent;
+  border: none;
+  color: whitesmoke;
+  transition: all 0.5s;
+  
+  }
+  .paginate>button:hover{
+      background-color: transparent;
+      color: red;
+  }
+  .paginate>button:focus{
+      color: red;
+      background-color: transparent;
+      box-shadow: none;
+  }

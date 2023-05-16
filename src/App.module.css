@@ -1,0 +1,15 @@
+
+.upBtn>i{
+    color: var(--bg-primary-dark) !important;
+
+    position: fixed;
+bottom: 0;
+right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50% !important;
+    margin:0 0.5rem 0.5rem 0;
+
+}

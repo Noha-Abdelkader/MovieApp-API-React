@@ -1,0 +1,42 @@
+.title{
+    transition: all 1s;
+    opacity: 0;
+}
+.title h5{
+    font-size: 1rem;
+}
+.peopleContent>div{
+    border: 4px solid var(--bgColorFaint);
+    border-radius: 3px 40px;
+}
+.peopleContent img{
+transition: all 1s;
+}
+.peopleContent:hover img{
+transform: scale(1.05);
+filter:  opacity(70%);
+}
+.peopleContent:hover .title{
+opacity: 1;
+/* transform: scale(1.1); */
+}
+.paginate{
+    cursor: pointer;
+}
+
+.paginate>button{
+    background-color: transparent;
+border: none;
+color: whitesmoke;
+transition: all 0.5s;
+
+}
+.paginate>button:hover{
+    background-color: transparent;
+    color: red;
+}
+.paginate>button:focus{
+    color: red;
+    background-color: transparent;
+    box-shadow: none;
+}

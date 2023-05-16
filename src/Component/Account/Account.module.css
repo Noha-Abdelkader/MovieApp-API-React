@@ -1,0 +1,7 @@
+.table td{
+padding: 0.5rem;
+}
+.table>tr>td:first-child{
+    color: var(--bg-primary-dark);
+    font-weight: 900;
+}

@@ -1,0 +1,76 @@
+nav{
+    background-color: var(--bgColorFaint);
+}
+nav .registerBtn , nav .loginBtn , nav .logOutBtn{
+    color: white;
+    outline: none;
+}
+nav .loginBtn{
+border: 1px solid rgb(65, 195, 65);
+}
+nav .registerBtn{
+    border: 1px solid #0dcaf0;
+}
+nav .logOutBtn{
+    border: 1px solid #dc3545 ;
+}
+
+nav .registerBtn:hover , nav .loginBtn:hover ,nav .logOutBtn:hover {
+    color: white;
+    transform: scale(1.02);
+}
+
+nav .loginBtn:hover {
+box-shadow:  0px 0px 5px 1px rgb(65, 195, 65);
+}
+nav .registerBtn:hover{
+    box-shadow:  0px 0px 5px 1px  #0dcaf0;
+}
+nav .logOutBtn:hover{
+    box-shadow:  0px 0px 5px 1px #dc3545;
+
+}
+.navBtns>a{
+    color: white !important;
+}
+
+.navSearch:hover{
+    box-shadow:  0px 0px 5px 1px whitesmoke;
+}
+.navList>ul{
+margin-bottom: 0;
+}
+.icon{
+    margin-right: .5rem;
+    transition: all 1s;
+
+}
+.icon:hover{
+color: #dc3545;
+transform: scale(1.02);
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .mediaList{
+display: none !important;
+    }    
+}
+
+.userBtn{
+   
+    border: none;
+    color: var(--mainColor);
+    background-color: var( --bg-primary-dark) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    transition: all 0.5s;
+cursor: auto !important;
+}
+.userBtn:hover{
+    background-color: var( --primary-color);
+}
+.navLink{
+    padding-bottom: 0;
+}

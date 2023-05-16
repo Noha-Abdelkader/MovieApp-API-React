@@ -1,0 +1,49 @@
+
+.movieContainer{
+background-repeat: no-repeat;
+/* background-position:center center ; */
+background-size: cover;
+}
+.layer{
+    background-color: rgba(17, 76, 136, 0.534);
+    padding: 3rem;
+  }
+  .poster{
+border: 5px solid var(--bg-primary-dark);
+transform: skew(-5deg);
+}
+.vote_average ,  .vote_count ,  .popularity , .geners , .origin_country , .release_date {
+    padding: 0.5rem;
+    border-radius: 10px;
+  margin-inline: 0.7rem ;
+  
+  }
+ .status{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(25% , 50%);
+ }
+@media screen and (max-width:768px) {
+    .status{
+        transform: translate(50%, 50%);
+    }
+}
+.geners , .original_language>p{
+    background:linear-gradient(to bottom,  var(--primary-color) , var(--bg-primary-dark));
+    font-weight: 900;
+    border-radius: 10px;
+
+}
+.icon i , .original_language i , .release_date i{
+font-size: 1.3rem;
+
+}
+
+ .icon i{
+  color: bisque;
+}
+  .original_language>p{
+padding: 0;
+margin: 0;
+  }
