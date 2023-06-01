@@ -109,3 +109,9 @@
       background-color: transparent;
       box-shadow: none;
   }
+
+  @media screen and (max-width:600px){
+    .vote_average ,  .vote_count ,  .popularity ,  .original_language{
+      font-size:0.8rem;
+    }
+  }

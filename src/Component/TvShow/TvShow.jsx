@@ -19,7 +19,7 @@ getData(1);
 return <div className='container py-5'>
 <div className="row gy-5">
 {results?results.map(content=>{
-return <div className={`col-md-4 p-3 ${styles.contain}`}  key={content.id}>
+return <div className={`col-4 col-md-3 p-3 ${styles.contain}`}  key={content.id}>
    <div className='  position-relative overflow-hidden'>
 
    <div>
@@ -34,7 +34,7 @@ return <div className={`col-md-4 p-3 ${styles.contain}`}  key={content.id}>
            {content.popularity?<h6 className={` ${styles.popularity} text-warning bg-black`}><i className="fa-solid fa-chart-line"></i>{content.popularity}</h6>:''}
             </div>
     
-          <p >{content.overview}</p>
+          <p  className={`${styles.overview}`}>{content.overview}</p>
           {content.release_date ? <h6 className={`${styles.release_date} ${styles.icon} p-0 `}><i className="fa-solid fa-calendar-days"></i> {content.release_date}</h6>:''}
           {content.original_language?<h6 className={`fw-bolder ${styles.original_language} ${styles.icon}  d-flex align-items-center `}> <i className="fa-solid fa-globe me-2"></i>Language<p className='p-2 ms-2'>{content.original_language}</p></h6>:''}
     
@@ -46,7 +46,7 @@ return <div className={`col-md-4 p-3 ${styles.contain}`}  key={content.id}>
            {content.popularity?<h6 className={` ${styles.popularity} text-warning bg-black`}><i className="fa-solid fa-chart-line"></i>{content.popularity}</h6>:''}
             </div>
     
-          <p >{content.overview}</p>
+          <p className={`${styles.overview}`}>{content.overview}</p>
           {content.release_date ? <h6 className={`${styles.release_date} ${styles.icon} p-0 `}><i className="fa-solid fa-calendar-days"></i> {content.release_date}</h6>:''}
           {content.original_language?<h6 className={`fw-bolder ${styles.original_language} ${styles.icon}  d-flex align-items-center `}> <i className="fa-solid fa-globe me-2"></i>Language<p className='p-2 ms-2'>{content.original_language}</p></h6>:''}
     

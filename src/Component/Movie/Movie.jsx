@@ -54,7 +54,7 @@ return <div className=' p-4'>
 
 </div>
   {resultsTopRated ? resultsTopRated.filter(movie=>((movie.original_title).includes(queryTopRated))).map((movie)=>{
-  return<div className='col-md-4 col-xl-2 ' key={movie.id}>
+  return<div className='col-4  col-md-3 col-xl-2 ' key={movie.id}>
    <div className={` position-relative ${styles.singleMovie} `}>
    <div>
     <img src= {`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}  className='w-100'  alt="" />
@@ -92,7 +92,7 @@ return <div className=' p-4'>
   </div>
 </div>
   {resultNowPlaying ?  resultNowPlaying.filter(movie=>(movie.original_title).toLowerCase().includes(queryNowPlaying)).map((movie)=>{
-   return <div className='col-md-4 col-xl-2 ' key={movie.id}>
+   return <div className='col-4  col-md-3  col-xl-2 ' key={movie.id}>
     <div className={` position-relative ${styles.singleMovie} `}>
     <div>
      <img src= {`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}  className='w-100'  alt="" />
@@ -128,7 +128,7 @@ return <div className=' p-4'>
   </div>
 </div>
   {resultUpcoming ? resultUpcoming.filter(movie=>(movie.original_title).toLowerCase().includes(queryUpComing)).map((movie)=>{
-   return <div className='col-md-4  col-xl-2'  key={movie.id}>
+   return <div className='col-4  col-md-3  col-xl-2'  key={movie.id}>
     <div className={` position-relative ${styles.singleMovie} `}>
     <div>
      <img src= {`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}  className='w-100'  alt="" />

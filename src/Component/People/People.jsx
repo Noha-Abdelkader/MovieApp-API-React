@@ -26,7 +26,7 @@ useEffect(()=>{
 return <div className='container py-5'>
   <div className="row gy-5 gx-3 mb-4 justify-content-center">
 {results ?results.map(result=>{
-  return <div className={`col-md-4 col-lg-2  ${styles.peopleContent}`} key={result.id}>
+  return <div className={`col-4 col-lg-2  ${styles.peopleContent}`} key={result.id}>
     <div className='position-relative overflow-hidden'>
 <div >
 <img src={"https://image.tmdb.org/t/p/w500/"+result.profile_path} alt="" className='w-100' />
