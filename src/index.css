@@ -6,7 +6,9 @@
 }
 :root{
    --bgColor: #0c0f21;
+   /* --bgColor: #201f25; */
   --bgColorFaint: #c3c5cb27;
+  /* --bgColorFaint: #292932; */
    --mainColor : #fff;
    --bg-primary-dark: #104d75;
    --primary-color: #5367ff;

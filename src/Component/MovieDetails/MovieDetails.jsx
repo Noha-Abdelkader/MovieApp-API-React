@@ -11,7 +11,7 @@ export default function MovieDetails() {
 
  const getMovieData = async ({movieId})=>{
         let {data} = await axios.get(`https://api.themoviedb.org/3/movie/${movieId}?api_key=99f8d07aa52bb74ca027bcd82345cf6b`);
-setMovieData(data);
+        setMovieData(data);
     }
 
     useEffect(()=>{

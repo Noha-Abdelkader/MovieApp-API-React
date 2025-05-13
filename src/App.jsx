@@ -77,21 +77,24 @@ useEffect(()=>{
 
 <div className='m-0 p-0'>
 <Routes>
-<Route path="/" element={ <Home/> } ></Route>
-<Route path="movieDetails/:movieId" element={<MovieDetails/>  }></Route>
-<Route path="home" element={ <Home/>} ></Route>
-<Route path='movie' element={ <Movie/>} ></Route>
-<Route path='people' element={<People/>}></Route>
-<Route path='peopleDetalis/:personId' element={<PeopleDetalis/>}></Route>
-<Route path='tvShow' element={<TvShow/>}></Route>
-<Route path='ContactUs' element={<ContactUs/>}></Route>
-<Route path='register' element={<Register/>}></Route>
+     <Route path="/" element={ <Home/> } ></Route>
 
-<Route path='login' element={<Login checkLogin={checkLoginState}/>} ></Route>
-<Route  path='*' element={<NotFound/>}></Route>
+     <Route path="movieDetails/:movieId" element={<MovieDetails/>  }></Route>
+     
+     <Route path="home" element={ <Home/>} ></Route>
+     <Route path='movie' element={ <Movie/>} ></Route>
+     <Route path='people' element={<People/>}></Route>
 
+     <Route path='peopleDetalis/:personId' element={<PeopleDetalis/>}></Route>
+     
+     <Route path='tvShow' element={<TvShow/>}></Route>
+     <Route path='ContactUs' element={<ContactUs/>}></Route>
+     <Route path='register' element={<Register/>}></Route>
 
-<Route path='Account' element={<userInfo.Provider value={user}> <Account/> </userInfo.Provider>}></Route>
+     <Route path='login' element={<Login checkLogin={checkLoginState}/>} ></Route>
+     <Route  path='*' element={<NotFound/>}></Route>
+
+     <Route path='Account' element={<userInfo.Provider value={user}> <Account/> </userInfo.Provider>}></Route>
 
   </Routes>
 </div>
